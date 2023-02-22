@@ -30,11 +30,13 @@
         private atessst DA {
             get => _da;
         }
-        private garde garde {
+        private garde GArd {
             get => _garde;
         }
-        public int Garde { get { return Garde != null ? Garde.Garde : "Не назначено"; } 
+        public int garde {
+            get => _garde;
         }
+      
         public string Atesst {
             get { return Subject != null ? DA.Da : "Не назначено"; }
         }
