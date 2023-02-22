@@ -1,6 +1,5 @@
-﻿namespace WeatherApp
-{
-    partial class WeatherForm
+﻿namespace studentApp {
+    partial class studentForm
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -137,7 +136,7 @@
             this.label3.TabIndex = 8;
             this.label3.Text = "Температура";
             // 
-            // WeatherForm
+            // studentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -153,8 +152,8 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.Studentdate);
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.Name = "WeatherForm";
-            this.Text = "Погода Хакасии";
+            this.Name = "studentForm";
+            this.Text = "Атестация студентов";
             ((System.ComponentModel.ISupportInitialize)(this.Studentdate)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

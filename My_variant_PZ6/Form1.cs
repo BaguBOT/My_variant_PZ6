@@ -2,26 +2,25 @@
 using System.Windows.Forms;
 using System.Collections.Generic;
 
-namespace WeatherApp
-{
-    public partial class WeatherForm : Form
+namespace studentApp {
+    public partial class studentForm : Form
     {
-        public WeatherDatabase _weather;
+        public StudentDatabase _student;
 
-        public WeatherForm()
+        public studentForm()
         {
             InitializeComponent();
 
-            _weather = new WeatherDatabase();
-            _weather.Initialize();
+            _student = new StudentDatabase();
+            _student.Initialize();
 
-            Studentdate.DataSource = _weather.Atest.ToList();
+            Studentdate.DataSource = _student.Atest.ToList();
         }
 
         private void textBox1_TextChanged(object sender, System.EventArgs e)
         {
-            List<Atest> _Find = _weather.Atest.Where(x => x.CityName.ToLower().Contains(textBox1.Text.ToLower()) ).ToList();
-            Studentdate.DataSource = _Find;
+            //List<Atest> _Find = _weather.Atest.Where(x => x.StudentNAME.ToLower().Contains(textBox1.Text.ToLower()) ).ToList();
+            //Studentdate.DataSource = _Find;
 
         }
 
@@ -35,19 +34,19 @@ namespace WeatherApp
 
         private void button1_Click(object sender, System.EventArgs e)
         {
-            Studentdate.DataSource = _weather.Atest.ToList();
+      //      Studentdate.DataSource = _weather.Atest.ToList();
         }
 
         private void button2_Click(object sender, System.EventArgs e)
         {
-            List<Atest> _Temp = _weather.Atest.Where(x => x.Temperature >0).ToList();
-            Studentdate.DataSource = _Temp;
+          //  List<Atest> _Temp = _weather.Atest.Where(x => x.Semester > 0).ToList();
+       //     Studentdate.DataSource = _Temp;
         }
 
         private void button3_Click(object sender, System.EventArgs e)
         {
-            List<Atest> _Temp = _weather.Atest.OrderBy(x => x.Temperature).ToList();
-            Studentdate.DataSource = _Temp;
+       //     List<Atest> _Temp = _weather.Atest.OrderBy(x => x.Semester).ToList();
+      //      Studentdate.DataSource = _Temp;
         }
     }
     

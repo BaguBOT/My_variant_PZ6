@@ -1,4 +1,4 @@
-﻿namespace WeatherApp
+﻿namespace studentApp
 {
     internal class Student
     {
