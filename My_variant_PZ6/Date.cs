@@ -6,7 +6,7 @@
         private subject  _subject;
         private Student _student;
         private atessst _da;
-        private garde _garde;
+        private int _garde;
 
         public int Semester {
             get => _Semester;
@@ -30,25 +30,23 @@
         private atessst DA {
             get => _da;
         }
-        private garde GArd {
+        public int Garde {
             get => _garde;
         }
-        public int garde {
-            get => _garde;
-        }
-      
+
         public string Atesst {
             get { return Subject != null ? DA.Da : "Не назначено"; }
         }
         public string SubjectName {
             get { return Subject != null ? Subject.Name : "Не назначено"; }
         }
-        public Atest(int Semester, Student Fuo, subject subjet, atessst Atesst)
+        public Atest(int Semester, Student Fuo, subject subjet, atessst Atesst,int garde)
         {
             _Semester = Semester; 
             _student = Fuo;
             _subject = subjet;
             _da = Atesst;
+            _garde = garde;
         }
 
 
